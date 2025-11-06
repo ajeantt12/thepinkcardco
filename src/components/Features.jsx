@@ -1,24 +1,27 @@
 import React from 'react'
-import { Zap, Shield, TrendingUp } from 'lucide-react'
+import { Sparkles, Ticket, TrendingUp } from 'lucide-react'
 
 const features = [
   {
-    title: 'Instant Approval',
-    copy: 'Get approved in seconds, not days. Our AI-powered system makes decisions instantly.',
-    icon: Zap,
-    gradient: 'from-purple-500 to-pink-500'
+    icon: Sparkles,
+    title: 'Instant Empowerment',
+    copy:
+      'Get approved in seconds. Our AI-powered system lets women lend or borrow instantly — no paperwork, no waiting, just access when it matters most.',
+    gradient: 'from-[#ff9cf7] via-[#ff73ba] to-[#f653d9]'
   },
   {
-    title: 'Zero Hidden Fees',
-    copy: 'Transparent pricing. No annual fees, no foreign transaction fees, no surprises.',
-    icon: Shield,
-    gradient: 'from-blue-500 to-cyan-500'
-  },
-  {
-    title: 'Smart Rewards',
-    copy: 'Earn 5% cashback on what you actually spend on. Rewards that adapt to your life.',
     icon: TrendingUp,
-    gradient: 'from-green-500 to-emerald-500'
+    title: 'Smart Returns',
+    copy:
+      'Earn more with every move. Lend to verified borrowers and earn higher returns, while PinkPoints reward your spending and grow with your lifestyle.',
+    gradient: 'from-[#7ff0ff] via-[#5bddff] to-[#5290ff]'
+  },
+  {
+    icon: Ticket,
+    title: 'Exclusive Access',
+    copy:
+      'Go beyond banking. Unlock curated events, luxury perks, and a private community where every member belongs — and every experience feels personal.',
+    gradient: 'from-[#cbb7ff] via-[#9f76ff] to-[#704bff]'
   }
 ]
 
