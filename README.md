@@ -1,16 +1,57 @@
-# React + Vite
+# The Pink Card Co.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A launch-page experience for the Pink Card Co.—a women-first credit and lending platform that blends premium aesthetics with a fast, waitlist-driven onboarding flow. The site highlights the product story, animates an interactive card mockup, and captures interest through a lightweight form backed by client-side validation.
 
-Currently, two official plugins are available:
+## Highlights
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Immersive hero with animated gradients, call-to-action badge, and Lucide icons that signal launch-readiness.
+- Feature grid that explains the instant approvals, smart rewards, and exclusive experiences behind the product vision.
+- Waitlist form powered by a reusable `useWaitlist` hook with basic validation and optimistic, animated feedback.
+- 3D-inspired card mockup that reinforces the brand palette and showcases the premium card experience.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 18 + Vite** for fast DX, HMR, and minimal bundling overhead.
+- **Tailwind CSS** for utility-first styling, gradients, and responsive layout.
+- **Lucide React** for lightweight, customizable iconography.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Install**  
+   ```bash
+   npm install
+   ```
+2. **Develop**  
+   ```bash
+   npm run dev
+   ```  
+   Visit the printed URL (defaults to `http://localhost:5173`) to see live changes.
+3. **Build for production**  
+   ```bash
+   npm run build
+   ```
+4. **Preview the build**  
+   ```bash
+   npm run preview
+   ```
+
+## Project Structure
+
+```
+src/
+├─ components/     # Hero, Navbar, feature cards, waitlist form, footer, card mockup
+├─ hooks/          # Custom hooks (e.g., useWaitlist)
+├─ utils/          # Email validation and other helpers
+├─ styles/         # Reusable Tailwind helpers
+└─ App.jsx         # Page composition and background effects
+```
+
+## Customization Tips
+
+- Update copy, stats, or gradients in `src/components/Hero.jsx` and `Features.jsx` to align with new campaigns.
+- Replace the mock card details inside `CardMockup.jsx` with real brand assets when available.
+- Extend `useWaitlist` with real submission logic (REST, Firebase, Airtable, etc.) by swapping the simulated `setTimeout`.
+
+## License
+
+Proprietary — All rights reserved by The Pink Card Co. Reach out before reusing any portion of this project.
